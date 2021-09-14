@@ -1,0 +1,21 @@
+﻿@model FeedbackApp.BLL.VMs.Comment.CreateComment
+<h2>Оставить комментарий</h2>
+<form method="post" asp-controller="Comment" asp-action="Leave a commment">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="AuthorName"></label><br />
+        <input asp-for="AuthorName" />
+        <span asp-validation-for="AuthorName"></span>
+    </div>
+    <div>
+        <label asp-for="Text"></label><br />
+        <input asp-for="Text" />
+        <span asp-validation-for="Text"></span>
+    </div>
+    <div>
+        <p>Время создания отзыва: <time datetime="YYYY-MM-DDThh:mm"></time></p>
+    </div>
+    <div>
+        <input type="submit" value="Добавить" />
+    </div>
+</form>

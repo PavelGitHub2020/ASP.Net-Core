@@ -1,0 +1,18 @@
+﻿@model FeedbackApp.BLL.VMs.Comment.CreateComment
+<h2>Выбрать категорию и продукт</h2>
+<form method="post" asp-controller="Category and product" asp-action="Add category and product">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="Category"></label><br />
+        <input asp-for="Category" />
+        <span asp-validation-for="Category"></span>
+    </div>
+    <div>
+        <label asp-for="Name"></label><br />
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+        <input type="submit" value="Добавить" />
+    </div>
+</form>

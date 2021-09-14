@@ -1,0 +1,26 @@
+﻿@model FeedbackApp.BLL.VMs.Comment.InfoComment
+<h2>Оставить инфо-комментарий</h2>
+<form method="post" asp-controller="Info-Ccomment" asp-action="Leave a  info-commment">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="AuthorName"></label><br />
+        <input asp-for="AuthorName" />
+        <span asp-validation-for="AuthorName"></span>
+    </div>
+    <div>
+        <label asp-for="Text"></label><br />
+        <input asp-for="Text" />
+        <span asp-validation-for="Text"></span>
+    </div>
+    <div>
+        <label asp-for="ProductName"></label><br />
+        <input asp-for="ProductName" />
+        <span asp-validation-for="ProductName"></span>
+    </div>
+    <div>
+        <p>Время создания отзыва: <time datetime="YYYY-MM-DDThh:mm"></time></p>
+    </div>
+    <div>
+        <input type="submit" value="Добавить" />
+    </div>
+</form>

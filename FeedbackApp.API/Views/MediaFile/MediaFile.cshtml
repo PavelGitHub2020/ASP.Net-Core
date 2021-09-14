@@ -1,0 +1,14 @@
+﻿@model FeedbackApp.BLL.VMs.MediaFile.CreateMediaFile
+<h2>Загрузить медиафайл</h2>
+<form method="post" asp-controller="Media file" asp-action="Upload media file">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="Path"></label><br />
+        <input asp-for="Path" />
+        <span asp-validation-for="Path"></span>
+    </div>
+    
+    <div>
+        <input type="submit" value="Загрузить" />
+    </div>
+</form>
